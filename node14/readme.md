@@ -25,7 +25,7 @@ yarn config set registry https://registry.npm.taobao.org
 # 默认案例
 
 ```bash
-docker run -it --rm --name yarn-demo -p 4000:4000 foxiswho/node-npm-yarn
+docker run -it --rm --name yarn-demo -p 4000:4000 foxiswho/node-npm-yarn:14
 ```
 
 > /home/app : 容器内部项目目录
