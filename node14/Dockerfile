@@ -22,6 +22,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
 && echo "alias ll='ls -lhG --color=auto'" >> /${PROGRAM_HOME}/node/.bashrc \
 && echo "alias ls='ls -lhG --color=auto'" >> /root/.bashrc \
 && echo "alias ll='ls -lhG --color=auto'" >> /root/.bashrc \
+&& echo "set encoding=utf-8 fileencodings=utf-8" >> /root/.vimrc \
 && chmod 755 /${PROGRAM_HOME}/node/.bashrc \
 && chmod 755 /root/.bashrc
 
