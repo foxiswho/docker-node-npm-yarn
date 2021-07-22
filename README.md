@@ -59,3 +59,15 @@ package 中 `scripts` 内，必须增加 `"dev": "vite --mode development"` 配�
   }
 }
 ```
+# 使用案例
+```bash
+docker run -it --rm --name yarn -p 4000:4000 -v `pwd`/www_app:/home/app foxiswho/node-npm-yarn:14 yarn install && yarn dev
+```
+> `pwd`: 为当前目录下
+>
+> www_app : 为你的项目目录
+>
+> /root/app : 容器内部目录
+>
+> 容器默认端口号: 4000
+> 
