@@ -29,9 +29,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
 #&&   sed -i s@/deb.debian.org/@/mirrors.aliyun.com/@g /etc/apt/sources.list
 
 RUN  apt-get clean && apt-get update && apt-get install vim supervisor wget curl tar zip unzip git -y \
-&& rm -rf /var/lib/apt/lists/*
-
-#RUN yarn config set registry https://registry.npm.taobao.org
+&& rm -rf /var/lib/apt/lists/* \
+&& yarn config set registry https://registry.npm.taobao.org
 
 RUN yarn --version && yarn
 

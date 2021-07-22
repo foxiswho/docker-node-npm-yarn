@@ -15,7 +15,7 @@ docker run -it --rm --name node14 -p 4000:4000 foxiswho/node-npm-yarn:14
 > `yarn dev`: Default start command in container
 
 # 中国镜像
-默认没有启用国内镜像，有需要同学，在使用时 执行如下命令
+默认启用国内镜像，有需要其他镜像远恶同学，在使用时 执行如下格式命令，把地址替换为你想要的原
 
 设置淘宝镜像
 ```bash
